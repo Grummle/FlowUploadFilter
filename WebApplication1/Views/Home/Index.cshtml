@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ng-flow/2.6.1/ng-flow-standalone.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <script type="text/javascript">
+    var app = angular.module('app', ['flow']);
+    app.controller('UploadController', function ($scope, $http) {
+
+    });
+    </script>
+
+
+
+<div ng-app="app">
+    <div ng-controller="UploadController">
+        <div flow-init="{target: '/home/upload'}"
+             flow-files-submitted="$flow.upload()"
+             flow-file-success="$file.msg = $message">
+
+            <input type="file" flow-btn />
+            Input OR Other element as upload button
+            <span class="btn" flow-btn>Upload File</span>
+
+            <table>
+                <tr ng-repeat="file in $flow.files">
+                    <td>{{$index+1}}</td>
+                    <td>{{file.name}}</td>
+                    <td>{{file.msg}}</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+</div>
