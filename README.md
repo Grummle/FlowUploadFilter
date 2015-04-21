@@ -32,3 +32,5 @@ The filter works by recognizing that `FlowFile` type is a paramater of the Actio
 come in it will check to see if that chunk completes the file, if it does not it will accept the chunk, save it then respond 
 with an accepted http status and skip execution of the actual Action. When the final chunk is recieved it will hydrate the FlowFile parameter 
 of the Action and let excution of the Action proceed. Paramater name is not important, only the Parameter type. The filter uses Temp storage.
+
+The chunk handling is based off of [Dimitry Efimenko's](https://github.com/DmitryEfimenko) [FlowJs-MVC](https://github.com/DmitryEfimenko/FlowJs-MVC)
