@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcceptedFileExtensions.cs" />
     <Compile Include="FlowChunk.cs" />
     <Compile Include="FlowFile.cs" />
     <Compile Include="FlowJsRepo.cs" />

@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{6FA80A3D-215D-4D97-9F89-634DF96D7383}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowUploadFilter", "FlowUploadFilter\FlowUploadFilter.csproj", "{D79B4299-F74B-411C-A83B-C2FE1E80CD82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowUploadFilter.Tests", "FlowUploadFilter.Tests\FlowUploadFilter.Tests.csproj", "{40B25F14-B87B-41B1-AA5A-EC1F9DEC5ACE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D79B4299-F74B-411C-A83B-C2FE1E80CD82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D79B4299-F74B-411C-A83B-C2FE1E80CD82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D79B4299-F74B-411C-A83B-C2FE1E80CD82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40B25F14-B87B-41B1-AA5A-EC1F9DEC5ACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B25F14-B87B-41B1-AA5A-EC1F9DEC5ACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B25F14-B87B-41B1-AA5A-EC1F9DEC5ACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B25F14-B87B-41B1-AA5A-EC1F9DEC5ACE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
