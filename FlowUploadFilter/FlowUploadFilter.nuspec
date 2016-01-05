@@ -6,6 +6,7 @@
     <title>$title$</title>
     <authors>Michael Dillon</authors>
     <owners>Michael Dillon</owners>
+    <projectUrl>https://github.com/Grummle/FlowUploadFilter</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>.Net MVC 5 Flow Js Filter</description>
     <releaseNotes></releaseNotes>
