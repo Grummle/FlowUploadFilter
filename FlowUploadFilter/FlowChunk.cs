@@ -59,12 +59,16 @@ namespace FlowUploadFilter
 
         internal bool ValidateBusinessRules(FlowValidationRules rules, out List<string> errorMessages)
         {
+            var acceptedFileExtensions = new AcceptedFileExtensions();
+
             errorMessages = new List<string>();
             if (rules.MaxFileSize.HasValue && TotalSize > rules.MaxFileSize.Value)
                 errorMessages.Add(rules.MaxFileSizeMessage ?? "size");
 
-            if (rules.AcceptedExtensions.Count > 0 && rules.AcceptedExtensions.SingleOrDefault(x => x == FileName.Split('.').Last()) == null)
+            if (!acceptedFileExtensions.IsExtensionAllowed(rules.AcceptedExtensions, FileName))
+            {
                 errorMessages.Add(rules.AcceptedExtensionsMessage ?? "type");
+            }
 
             return errorMessages.Count == 0;
         }
